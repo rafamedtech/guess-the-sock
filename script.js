@@ -166,7 +166,7 @@ start.addEventListener("click", () => {
 
 function nextImage() {
   sockImage.src = socksList[index].img;
-  // checkButtonDisable();
+  checkButton.disabled = true;
 }
 
 // Event listener when the check checkButton is clicked
