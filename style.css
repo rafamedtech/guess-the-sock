@@ -208,3 +208,9 @@ body {
   position: absolute;
   left: 10px;
 }
+
+#check:disabled {
+  background-color: grey;
+  opacity: 0.5;
+  /* visibility: hidden; */
+}
