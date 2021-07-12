@@ -1,4 +1,5 @@
 const mainSection = document.querySelector(".main-container");
+const logo = document.querySelector(".logo");
 
 const styleList = document.getElementById("style-list");
 const checkButton = document.getElementById("check");
@@ -14,6 +15,8 @@ const score = document.getElementById("score");
 
 const styleSelected = document.getElementById("style-answer");
 const colorSelected = document.getElementById("color-answer");
+
+const startImageSection = document.querySelector(".start-section-images");
 
 const sock = {};
 
@@ -91,7 +94,7 @@ const socksList = [
 
 checkButton.style.display = "none";
 clear.style.display = "none";
-mainSection.style.opacity = 0;
+mainSection.style.display = "none";
 scoreContainer.style.display = "none";
 
 pickStyle();
@@ -151,10 +154,12 @@ start.addEventListener("click", () => {
   image.appendChild(sockImage);
   checkButton.style.display = "block";
   start.style.display = "none";
-  mainSection.style.opacity = 1;
+  mainSection.style.display = "flex";
   clear.style.display = "block";
   start.classList.remove("initial");
   scoreContainer.style.display = "initial";
+  startImageSection.style.display = "none";
+  logo.classList.add("started");
 });
 
 function nextImage() {
@@ -172,9 +177,9 @@ checkButton.addEventListener("click", () => {
 // Clear the game
 clear.onclick = () => {
   img.innerHTML = "";
-  mainSection.style.display = 0;
+  mainSection.style.display = "none";
   clear.style.display = "none";
   checkButton.style.display = "none";
-
+  logo.classList.remove("started");
   location.reload();
 };

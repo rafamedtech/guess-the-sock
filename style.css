@@ -142,7 +142,7 @@ body {
 .style:hover,
 .color:hover {
   opacity: 0.8;
-  color: #fff;
+  color: whitesmoke;
   transition: opacity 0.2s ease;
 }
 
@@ -162,4 +162,41 @@ body {
 
 #score {
   font-size: 1.7rem;
+}
+
+.start-section-images {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f4f8f9;
+  /* flex-direction: column; */
+}
+
+.start-section-images div {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+.start-section-images img {
+  width: 300px;
+}
+
+.start-section-images img:nth-child(2) {
+  align-self: flex-end;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.logo.started {
+  position: absolute;
+  left: 10px;
 }
