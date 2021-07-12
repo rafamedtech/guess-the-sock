@@ -188,6 +188,13 @@ body {
   align-self: flex-end;
 }
 
+.start-section-images .image-right {
+  align-items: flex-end;
+}
+.start-section-images .image-right img:nth-child(2) {
+  align-self: flex-start;
+}
+
 .logo {
   width: 100px;
 }

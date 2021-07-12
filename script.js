@@ -108,7 +108,7 @@ function pickStyle() {
       sock.style = item.innerText;
       styleSelected.innerText = sock.style;
       styleSelected.style.opacity = 1;
-      // checkButton.style.opacity = 1;
+      checkButton.disabled = false;
     });
   });
   // checkButtonDisable();
@@ -122,6 +122,7 @@ function pickColor() {
       sock.color = item.innerText;
       colorSelected.innerText = sock.color;
       colorSelected.style.opacity = 1;
+      checkButton.disabled = false;
     });
   });
   // checkButtonDisable();
@@ -160,6 +161,7 @@ start.addEventListener("click", () => {
   scoreContainer.style.display = "initial";
   startImageSection.style.display = "none";
   logo.classList.add("started");
+  checkButton.disabled = true;
 });
 
 function nextImage() {
