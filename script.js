@@ -136,7 +136,7 @@ function validateSock(sock, style, color) {
   colorSelected.style.opacity = 0;
 
   if (index === socksList.length - 1) {
-    alert(`Game over, your score is ${score.innerText}`);
+    alert(`Game over, your total score is ${score.innerText} 🎉🎊!!`);
     location.reload();
   }
   return index++;
