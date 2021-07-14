@@ -20,17 +20,7 @@ const startImageSection = document.querySelector(".start-section-images");
 
 const sock = {};
 
-// function checkButtonDisable() {
-//   if (!sock.name && !sock.color) {
-//     checkButton.style.opacity = 0;
-//   } else {
-//     checkButton.style.opacity = 1;
-//   }
-// }
-
-// checkButtonDisable();
-
-const socksList = [
+const socksList1 = [
   {
     name: "Women's Wide Calf Socks",
     color: "Logwood",
@@ -92,6 +82,34 @@ const socksList = [
   },
 ];
 
+const socksList = [
+  {
+    name: "Black Hive Collection Vintage Stripe Calf Sock",
+    color: "Redwood Amber",
+    img: "https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/redwood-amber-layflat-product-transparent.png%3Fv%3D1611331143",
+  },
+  {
+    name: "Women's Performance Running Calf Sock",
+    color: "Wave Melon",
+    img: "https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/wave-melon-layflat-product-transparent_2d03ffb4-c75c-40ac-846c-1f408c46037a.png%3Fv%3D1625759701",
+  },
+  {
+    name: "Women's Originals Calf Socks",
+    color: "Spruce",
+    img: "https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/spruce-layflat-product-transparent_28c05b0c-ffa6-4065-976a-e475d5eedbae.png%3Fv%3D1626187367",
+  },
+  {
+    name: "Black Hive Collection Border Stripe Calf Sock",
+    color: "Midnight Blue",
+    img: "https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/midnight-blue-layflat-product-transparent_1c6fac44-6360-4c60-8762-0f4276205c9a.png%3Fv%3D1625764699",
+  },
+  {
+    name: "Men's Solid Neon Tipping Calf Socks",
+    color: "Wave",
+    img: "https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/wave-layflat-product-transparent_e7bb65ed-957d-4d11-a8d1-5fc3e6432e92.png%3Fv%3D1619819608",
+  },
+];
+
 checkButton.style.display = "none";
 clear.style.display = "none";
 mainSection.style.display = "none";
@@ -111,7 +129,6 @@ function pickStyle() {
       checkButton.disabled = false;
     });
   });
-  // checkButtonDisable();
 }
 
 // select color
@@ -125,7 +142,6 @@ function pickColor() {
       checkButton.disabled = false;
     });
   });
-  // checkButtonDisable();
 }
 
 // Validate if the options selected match

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Sock</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="/style.css
+    "
+    />
+  </head>
+  <body>
+    <figure class="logo">
+      <img
+        src="https://res.cloudinary.com/bombas/image/fetch/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/files/Bee_2400x.png%3Fv%3D1503877566"
+        alt=""
+      />
+    </figure>
+    <section class="start-section-images">
+      <div class="image-left">
+        <img
+          src="https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/logwood-layflat-product-transparent_fcf0eb29-c3ad-48fa-a0a7-fa7967431d41.png%3Fv%3D1624999979"
+          alt=""
+        />
+        <img
+          src="https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/midnight-olive-layflat-product-transparent_f87e17ba-b2d6-4ad9-b025-c9afbe2e1579.png%3Fv%3D1622150687"
+          alt=""
+        />
+        <img
+          src="https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/charcoal-layflat-product-transparent_f9f1b1ab-c9a5-40ab-b031-e8f0bcdf2dee.png%3Fv%3D1620326751"
+          alt=""
+        />
+      </div>
+      <div class="image-right">
+        <img
+          src="https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/rainbow-layflat-product-transparent_8ee9b1d1-8c38-4fa4-8221-10f725051a16.png%3Fv%3D1622125785"
+          alt=""
+        />
+        <img
+          src="https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/midnight-navy-layflat-product-transparent_3f224957-6329-4b21-adde-1b42b1fb11dc.png%3Fv%3D1611783339"
+          alt=""
+        />
+        <img
+          src="https://assets.bombas.com/image/fetch/c_crop,h_3040,w_3040/b_rgb:F5F8F8,c_scale,w_1068/f_auto,q_auto/https://cdn.shopify.com/s/files/1/1119/5850/products/soft-white-layflat-product-transparent_e638a40b-5bae-42fa-95b5-6623ca1bc4fa.png%3Fv%3D1616703173"
+          alt=""
+        />
+      </div>
+    </section>
+    <div class="buttons-container">
+      <button id="start" class="initial">Start</button>
+      <button id="clear">Restart</button>
+      <div class="score-container">
+        <span>Score: </span>
+        <span id="score">0</span>
+      </div>
+    </div>
+
+    <h1>Guess the Sock</h1>
+    <div class="main-container">
+      <div class="style-container">
+        <h2>Style Names</h2>
+        <ul id="style-list">
+          <li class="style">
+            <span>Men's Performance Cycling Calf Socks</span>
+          </li>
+          <li class="style"><span>Men's Performance Boot Calf Socks</span></li>
+          <li class="style"><span>Transgender Pride Flag Calf Socks</span></li>
+          <li class="style"><span>Women's Wide Calf Socks</span></li>
+          <li class="style"><span>Heart And Sole Calf Socks</span></li>
+          <li class="style">
+            <span>Women's Merino Wool Running Calf Socks</span>
+          </li>
+          <li class="style">
+            <span>Men's Performance Cushioned No Show Socks</span>
+          </li>
+          <li class="style">
+            <span>Men's Merino Wool Ski & Snowboard Socks</span>
+          </li>
+          <li class="style">
+            <span>Pride All-Purpose Performance Calf Socks</span>
+          </li>
+          <li class="style"><span>Men's Dress Knee High Socks</span></li>
+        </ul>
+        <div class="answer-container"><span id="style-answer"></span></div>
+      </div>
+
+      <div class="center-elements">
+        <div id="img" class="image-container"></div>
+        <div>
+          <button id="check" type="button">Check Answer</button>
+          <!-- <button id="next" type="button">Next</button> -->
+        </div>
+      </div>
+
+      <div class="color-container">
+        <h2>Colors</h2>
+        <ul id="color-list">
+          <li class="color"><span>Parakeet</span></li>
+          <li class="color"><span>Brown</span></li>
+          <li class="color"><span>Midnight Navy</span></li>
+          <li class="color"><span>Charcoal</span></li>
+          <li class="color"><span>Purple Blue</span></li>
+          <li class="color"><span>Blue Multi</span></li>
+          <li class="color"><span>Logwood</span></li>
+          <li class="color"><span>Soft White</span></li>
+          <li class="color"><span>Midnight Olive</span></li>
+          <li class="color"><span>Rainbow</span></li>
+        </ul>
+        <div class="answer-container"><span id="color-answer"></span></div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
