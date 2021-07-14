@@ -20,7 +20,7 @@ const startImageSection = document.querySelector(".start-section-images");
 
 const sock = {};
 
-const socksList1 = [
+const socksList = [
   {
     name: "Women's Wide Calf Socks",
     color: "Logwood",
@@ -82,7 +82,7 @@ const socksList1 = [
   },
 ];
 
-const socksList = [
+const socksList1 = [
   {
     name: "Black Hive Collection Vintage Stripe Calf Sock",
     color: "Redwood Amber",
